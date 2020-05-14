@@ -228,6 +228,137 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ideapply.github.io/2020/05/14/Ulysses%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Luke Sky">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="品味薄荷醇">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/14/Ulysses%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/" itemprop="url">Ulysses语法汇总</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-14T17:14:06+08:00">
+                2020-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default' async></script>
+
+<h2 id="1-公式"><a href="#1-公式" class="headerlink" title="1. 公式"></a>1. 公式</h2><p>Ulysses无法直接支持公式，采用mathjax语法在html格式下可以输出公式。文件需要增加一个文件头:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~~&lt;script type&#x3D;&quot;text&#x2F;x-mathjax-config&quot;&gt;MathJax.Hub.Config(&#123;tex2jax: &#123;inlineMath:[[&#39;$&#39;,&#39;$&#39;]]&#125;&#125;);&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&#39;https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;2.7.5&#x2F;latest.js?config&#x3D;default&#39; async&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="公式的输入"><a href="#公式的输入" class="headerlink" title="公式的输入"></a>公式的输入</h3><ul>
+<li>行间输入<br>以<code>~$公式$~</code>的格式输入，例如：<br><code>~$C_1$~</code>或<code>$C\_1$</code>，两者均显示为 $C_1$。前者以Raw Source形式输入，后者以”\”作为转义符。</li>
+<li>占行输入<br>以<code>~~$$公式$$</code>格式，分为两种输入方式，分别是：<br><code>~~$$x^2+y^2=1$$</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~~$$</span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">max_&#123;\delta,w,b&#125;\delta</span><br><span class="line">\end&#123;equatuion&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="公式序号"><a href="#公式序号" class="headerlink" title="公式序号"></a>公式序号</h3><p>用_\tag{n}_标签，例如_f(x)=x\tag{1}_显示为<br>$$f(x)=x \tag{1)$$<br>$$f(x)=x \tag{1)$$</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ideapply.github.io/2020/05/14/hello%20world%20again/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -302,7 +433,11 @@
             <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});</script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default' async></script>
 
-<p>$C_1+D^2=y_2^3$<br>$C_1$<br>$$C_1$$<br>$$x^2+y^2=T(C_1,C_2) \tag{1,1}$$</p>
+<p>$C_1+D^2=y_2^3$<br>$C_1$<br>$$C_1$$<br>$$x^2+y^2=T(C_1,C_2) \tag{ZZ} \label{x}$$</p>
+<p>$$<br>\begin{equation}<br>max_{\delta,w,b}\delta=x^2+y^2 \tag{1}<br>\end{equation}<br>$$</p>
+<p>$$<br>\begin{equation}<br>x^2+C_2=D<br>\end{equation}<br>$$</p>
+<p>\eqref{x}</p>
+<p>$$<br>\begin{displaymath}<br>max_{\delta,w,b}\delta=x^2+y^2 \tag{2}<br>\end{displaymath}<br>$$</p>
 
           
         
@@ -880,7 +1015,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
