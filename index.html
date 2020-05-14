@@ -312,7 +312,10 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~~$$</span><br><span class="line">\begin&#123;equation&#125;</span><br><span class="line">max_&#123;\delta,w,b&#125;\delta</span><br><span class="line">\end&#123;equatuion&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
 
-<h3 id="公式序号"><a href="#公式序号" class="headerlink" title="公式序号"></a>公式序号</h3><p>用_\tag{n}_标签，例如_f(x)=x \tag{1}_显示为<br>$$ f (x ) = x \tag{1}$$<br>$$<br>\begin{equation}<br>f(x)=x \tag{1}<br>\end{equation}<br>$$</p>
+<h3 id="公式序号"><a href="#公式序号" class="headerlink" title="公式序号"></a>公式序号</h3><p>用<code>\tag{n}</code>标签，例如<code>f(x)=x \\tag{1}</code>显示为<br>$$ f (x ) = x \tag{1}$$<br>$$<br>\begin{equation}<br>f(x)=x \tag{1}<br>\end{equation}<br>$$</p>
+<p>公式引用，通过label语法来实现，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~$$ a :&#x3D; x^2-y^3 \tag&#123;*&#125; \label&#123;*&#125; $$</span><br></pre></td></tr></table></figure>
+<p>显示为：<br>$$ a := x^2-y^3 \tag{<em>} \label{*</em>} $$<br>通过<code>\eqref{**}</code>可以引用公式，显示为<br>$\eqref{**}$</p>
 
           
         
